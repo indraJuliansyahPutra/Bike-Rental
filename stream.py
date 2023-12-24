@@ -4,7 +4,7 @@ import numpy as np
 import plotly.express as px
 
 # Load the data
-bike_data = pd.read_csv('data\Bike-sharing-dataset\hour.csv')
+bike_data = pd.read_csv('data\hour.csv')
 bike_data = bike_data.rename(columns= {'dteday':'date', 'yr':'year', 'mnth':'month', 'hr': 'hour', 'weathersit': 'weather', 'hum':'humidity', 'casual': 'casual_user', 'registered': 'registered_user', 'cnt':'count'})
 
 del bike_data['instant']
